@@ -186,3 +186,79 @@ navbar.bg-custom{
     background-position: left bottom;
     color: white;
 }
+
+/*============================*/
+/* TESTIMONIAL */
+/*============================*/
+.content {
+  margin-top: 20px;
+}
+
+.adjust1 {
+  float: left;
+  width: 100%;
+  margin-bottom: 0;
+}
+
+.adjust2 {
+  margin: 0;
+}
+
+.carousel-indicators {
+  margin-bottom: -20px;
+}
+
+.carousel-indicators li {
+  border: 1px solid #ccc;
+}
+
+.carousel-indicators .active {
+  background: #31708f;
+}
+
+.carousel-control {
+  color: #31708f;
+  width: 5%;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #31708f;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+  background-image: none;
+}
+
+.media-object {
+  margin: auto;
+  margin-top: 15%;
+}
+
+@media screen and (max-width: 768px) {
+  .media-object {
+    margin-top: 0;
+  }
+}
+
+/*Footer*/
+footer{
+    position: relative;
+}
+.upper-svg{
+    position: absolute;
+    left: 0;
+}
+.newsletter{
+    border-radius: 10px;
+    height: 100px;
+    position: absolute;
+    top: 50%;
+    background: tomato;
+    width: 70%;
+}
+.newsletter h5{
+    padding: 20px;
+}
+

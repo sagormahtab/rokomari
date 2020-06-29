@@ -2,635 +2,763 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE-edge">
 
-    <!-- vendors -->
-    <link rel="stylesheet" href="vendors/css/normalize.css">
+  <!-- vendors -->
+  <link rel="stylesheet" href="vendors/css/normalize.css">
 
-    <!--Bootstrap-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <!--Bootstrap-->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <!-- resources -->
-    <link rel="stylesheet" href="resources/css/style.css">
-    <link rel="stylesheet" href="resources/css/responsive.css">
+  <!-- resources -->
+  <link rel="stylesheet" href="resources/css/style.css">
+  <link rel="stylesheet" href="resources/css/responsive.css">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
-    <!--font-family: 'Roboto', sans-serif;-->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <!--font-family: 'Roboto', sans-serif;-->
 
-    <title>Minilab</title>
+  <title>Minilab</title>
 </head>
 
 <body>
-    <!-- START HEADER SECTION -->
-    <header class="py-3">
-        <div id="upper-header-wrapper" class="container-fluid">
-            <div class="container">
-            <div class="upper-header">
-            <div class="row">
+  <!-- START HEADER SECTION -->
+  <header class="py-3">
+    <div id="upper-header-wrapper" class="container-fluid">
+      <div class="container">
+        <div class="upper-header">
+          <div class="row">
             <div class="col-md-2">
-                <img src="resources/img/rokomari.png" alt="rokomari" class="brand-logo">
+              <img src="resources/img/rokomari.png" alt="rokomari" class="brand-logo">
             </div>
             <div class="col-md-7">
-                <div class="input-group mb-3">
-                    <div class="input-group-prepend">
-                        <button class="btn btn-outline-secondary category-btn" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Books <i class="fas fa-chevron-down search-chevron ml-1"></i></button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Electronics</a>
-                            <a class="dropdown-item" href="#">Gift Finder</a>
-                            <a class="dropdown-item" href="#">Stationary &amp; Others</a>
-                            <a class="dropdown-item" href="#">Blog</a>
-                        </div>
-                    </div>
-                    <input type="text" class="search-input form-control" aria-label="Text input with dropdown button">
-                    <div class="input-group-append">
-                    <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2"><i class="fas fa-search"></i></button>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <button class="btn btn-outline-secondary category-btn" type="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">Books <i
+                      class="fas fa-chevron-down search-chevron ml-1"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Electronics</a>
+                    <a class="dropdown-item" href="#">Gift Finder</a>
+                    <a class="dropdown-item" href="#">Stationary &amp; Others</a>
+                    <a class="dropdown-item" href="#">Blog</a>
                   </div>
                 </div>
+                <input type="text" class="search-input form-control" aria-label="Text input with dropdown button">
+                <div class="input-group-append">
+                  <button class="btn btn-outline-secondary search-btn" type="button" id="button-addon2"><i
+                      class="fas fa-search"></i></button>
+                </div>
+              </div>
             </div>
             <div class="col-md-3">
-                <div class="upper-header-right">
-                    <img src="resources/img/cart-icon.png" alt="cart-icon" class="mr-3">
-                    <img src="resources/img/user-icon.png" alt="user-icon">
-                </div>
-            </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        
-        <!--hr-->
-        
-        <div id="main-nav" class="container">
-<nav class="navbar navbar-expand-lg navbar-light bg-custom">
-  
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Books <i class="fas fa-chevron-down nav-chevron ml-1"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-          
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="text-uppercase">Books</span>
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Drama</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educational</a>
-                </li>
-              </ul>
+              <div class="upper-header-right">
+                <img src="resources/img/cart-icon.png" alt="cart-icon" class="mr-3">
+                <img src="resources/img/user-icon.png" alt="user-icon">
               </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Islamic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Freelancing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Technology</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <a href="">
-                  <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
-                </a>
-                <p>Dan Brown</p>
-
-              </div>
-              <!-- /.col-md-4  -->
             </div>
           </div>
-          <!--  /.container  -->
-
-
         </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Electronics  <i class="fas fa-chevron-down nav-chevron ml-1"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="text-uppercase">Books</span>
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Drama</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educational</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Islamic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Freelancing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Technology</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <a href="">
-                  <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
-                </a>
-                <p>Dan Brown</p>
-
-              </div>
-              <!-- /.col-md-4  -->
-            </div>
-          </div>
-          <!--  /.container  -->
-
-
-        </div>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Gift Finder <i class="fas fa-chevron-down nav-chevron ml-1"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="text-uppercase">Books</span>
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Drama</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educational</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Islamic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Freelancing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Technology</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <a href="">
-                  <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
-                </a>
-                <p>Dan Brown</p>
-
-              </div>
-              <!-- /.col-md-4  -->
-            </div>
-          </div>
-          <!--  /.container  -->
-
-
-        </div>
-      </li>
-       
-       <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Corporate Sales <i class="fas fa-chevron-down nav-chevron ml-1"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="text-uppercase">Books</span>
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Drama</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educational</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Islamic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Freelancing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Technology</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <a href="">
-                  <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
-                </a>
-                <p>Dan Brown</p>
-
-              </div>
-              <!-- /.col-md-4  -->
-            </div>
-          </div>
-          <!--  /.container  -->
-
-
-        </div>
-      </li>
-
-      <li class="nav-item dropdown">
-        <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Others <i class="fas fa-chevron-down nav-chevron ml-1"></i>
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-
-          <div class="container">
-            <div class="row">
-              <div class="col-md-4">
-                <span class="text-uppercase">Books</span>
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Science Fiction</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Drama</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Educational</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <ul class="nav flex-column">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Islamic</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Freelancing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Technology</a>
-                </li>
-              </ul>
-              </div>
-              <!-- /.col-md-4  -->
-              <div class="col-md-4">
-                <a href="">
-                  <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
-                </a>
-                <p>Dan Brown</p>
-
-              </div>
-              <!-- /.col-md-4  -->
-            </div>
-          </div>
-          <!--  /.container  --> 
-
-
-        </div>
-      </li>
-       <li class="nav-item">
-        <a class="nav-link" href="#">Blog</a>
-      </li>
-    </ul>
-  </div>
-
-
-</nav>
-  </div>
-    </header>
-    <!--END HEADER SECTION-->
-    
-    
-    <!--START BANNER SECTION-->
-    <section id="banner-wrapper">
-        <div class="container">
-            <div class="banner">
-                <div class="row align-items-center">
-                <div class="col-md-6">
-                    <a class="ready-text" href="#">Are you ready to learn?</a>
-                    <h1 class="mt-2">Start learning new things Daily</h1>
-                    <a href="#" class="rounded-pill btn banner-btn mt-4">Let's Start</a>
-                </div>
-                <div class="col-md-6">
-                    <img src="resources/img/header-img.png" alt="" class="img-fluid">
-                </div>
-            </div>
-            </div>
-        </div>
-    </section>
-    <!--END BANNER SECTION-->
-    
-    <!--START ABOUTUS SECTION -->
-    <section id="aboutus">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="card-wrapper">
-                        <div class="card-img-wrapper">
-                            <img class="img-fluid" src="resources/img/topic-icon.png" alt="">
-                        </div>
-                            <h5>1500+ Topic</h5>
-                            <p class="text-muted"><small>Learn Anything</small></p>
-                        </div>
-                    </div>
-                <div class="col-md-3">
-                    <div class="card-wrapper">
-                        <div class="card-img-wrapper">
-                            <img class="img-fluid" src="resources/img/student-icon.png" alt="">
-                        </div>
-                            <h5>1800+ Students</h5>
-                            <p class="text-muted"><small>Learn Anything</small></p>
-                        </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card-wrapper">
-                        <div class="card-img-wrapper">
-                            <img class="img-fluid" src="resources/img/test-icon.png" alt="">
-                        </div>
-                            <h5>9k+ Test Token</h5>
-                            <p class="text-muted"><small>Learn Anything</small></p>
-                        </div>
-                </div>
-                <div class="col-md-3">
-                    <div class="card-wrapper">
-                        <div class="card-img-wrapper">
-                            <img class="img-fluid" src="resources/img/a-plus-icon.png" alt="">
-                        </div>
-                            <h5>2000 A+</h5>
-                            <p class="text-muted"><small>Learn Anything</small></p>
-                        </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--END ABOUTUS SECTION-->
-    
-    <!--START COURSES SECTION-->
-    <section id="courses">
-       <div class="container">
-       <h2 class="text-center">Online Courses</h2>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="course-card">
-                    <img src="resources/img/class-1-bg.png" alt="" class="img-fluid">
-                    <div class="course-card-content">
-                    <div class="client-img-btn d-flex justify-content-between align-items-center">
-                        <img src="resources/img/class-1-instructor.png" alt="">
-                        <a href="#" class="free-btn rounded-pill">Free</a>
-                    </div>
-                    <h5>Modern Psychology</h5>
-                    <p class="text-muted">Designation</p>
-                    <a href="#" class="buy-btn rounded-pill">
-                        Buy Course
-                    </a>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
-                            <p class="mb-0"><small>Start, 20 July, 2020</small></p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
-                            <p class="mb-0"><small>60 Seats</small></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="course-card">
-                    <img src="resources/img/class-2-bg.png" alt="" class="img-fluid">
-                    <div class="course-card-content">
-                    <div class="client-img-btn d-flex justify-content-between align-items-center">
-                        <img src="resources/img/class-2-instructor.png" alt="">
-                        <a href="#" class="free-btn rounded-pill">Free</a>
-                    </div>
-                    <h5>HR Management</h5>
-                    <p class="text-muted">Designation</p>
-                    <a href="#" class="buy-btn rounded-pill">
-                        Buy Course
-                    </a>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
-                            <p class="mb-0"><small>Start, 20 July, 2020</small></p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
-                            <p class="mb-0"><small>60 Seats</small></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="course-card">
-                    <img src="resources/img/class-3-bg.png" alt="" class="img-fluid">
-                    <div class="course-card-content">
-                    <div class="client-img-btn d-flex justify-content-between align-items-center">
-                        <img src="resources/img/class-3-instructor.png" alt="">
-                        <a href="#" class="free-btn rounded-pill">Free</a>
-                    </div>
-                    <h5>Modern Psychology</h5>
-                    <p class="text-muted">Designation</p>
-                    <a href="#" class="buy-btn rounded-pill">
-                        Buy Course
-                    </a>
-                    <hr>
-                    <div class="d-flex justify-content-between">
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
-                            <p class="mb-0"><small>Start, 20 July, 2020</small></p>
-                        </div>
-                        <div class="d-flex align-items-center">
-                            <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
-                            <p class="mb-0"><small>60 Seats</small></p>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <a href="#" class="btn rounded-pill all-course-btn">View All Courses</a>
-        </div>
-    </section>
-    <!--END COURSES SECTION-->
-    
-    <!--START TESTIMONIAL SECTION-->
-    <section id="testimonial">
-        <div class="container content">
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active carousel-item">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="thumbnail adjust1">
-                            <div class="col-lg-2 col-md-2 col-12">
-                                <img class="media-object rounded img-fluid" src="http://placehold.it/100">
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-12">
-                                <div class="caption">
-                                    <p class="text-info lead adjust2">I can&apos;t wait to test this out.</p>
-                                    <p><span class="glyphicon glyphicon-thumbs-up"></span>&#xA0;This is a testimonial
-                                        window. Feedback of user can be displayed here.</p>
-                                    <blockquote class="adjust2">
-                                        <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example1.com</cite></small> 
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item carousel-item">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="thumbnail adjust1">
-                            <div class="col-lg-2 col-md-2 col-12">
-                                <img class="media-object rounded img-fluid" src="http://placehold.it/100">
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-12">
-                                <div class="caption">
-                                    <p class="text-info lead adjust2">I can&apos;t wait to test this out.</p>
-                                    <p><span class="glyphicon glyphicon-thumbs-up"></span>&#xA0;This is a testimonial
-                                        window. Feedback of user can be displayed here.</p>
-                                    <blockquote class="adjust2">
-                                        <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example2.com</cite></small> 
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="item carousel-item">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="thumbnail adjust1">
-                            <div class="col-lg-2 col-md-2 col-12">
-                                <img class="media-object rounded img-fluid" src="http://placehold.it/100">
-                            </div>
-                            <div class="col-lg-10 col-md-10 col-12">
-                                <div class="caption">
-                                    <p class="text-info lead adjust2">I can&apos;t wait to test this out.</p>
-                                    <p><span class="glyphicon glyphicon-thumbs-up"></span>&#xA0;This is a testimonial
-                                        window. Feedback of user can be displayed here.</p>
-                                    <blockquote class="adjust2">
-                                        <p>Abhijit Goswami</p> <small><cite title="Source Title"><i class="glyphicon glyphicon-globe"></i> www.example3.com</cite></small> 
-                                    </blockquote>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Controls --> <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev"> <span class="glyphicon glyphicon-chevron-left"></span> </a>
-        <a
-        class="right carousel-control" href="#carousel-example-generic" data-slide="next"> <span class="glyphicon glyphicon-chevron-right"></span> 
-            </a>
+      </div>
     </div>
-</div>
-    </section>
-    <!--END TESTIMONIAL SECTION-->
-    
-    <!--Start Footer-->
-    <footer>
-        <svg  class="upper-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#282F95" fill-opacity="0.9" d="M0,128L60,117.3C120,107,240,85,360,80C480,75,600,85,720,112C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        <svg class="bottom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#DAD9E3" fill-opacity="1" d="M0,192L60,208C120,224,240,256,360,245.3C480,235,600,181,720,149.3C840,117,960,107,1080,96C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>
-        <div class="container">
-            <div class="newsletter">
-            <div class="row">
-                <div class="col-md-5">
-                    <h5>Subscribe to Our Newsletter</h5>
+
+    <!--hr-->
+
+    <div id="main-nav" class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-custom">
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Books <i class="fas fa-chevron-down nav-chevron ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase">Books</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Drama</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Educational</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Islamic</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Freelancing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Technology</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a href="">
+                        <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
+                      </a>
+                      <p>Dan Brown</p>
+
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
                 </div>
-                <div class="col-md-7">
-                    
+                <!--  /.container  -->
+
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Electronics <i class="fas fa-chevron-down nav-chevron ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase">Books</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Drama</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Educational</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Islamic</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Freelancing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Technology</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a href="">
+                        <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
+                      </a>
+                      <p>Dan Brown</p>
+
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
                 </div>
+                <!--  /.container  -->
+
+
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Gift Finder <i class="fas fa-chevron-down nav-chevron ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase">Books</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Drama</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Educational</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Islamic</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Freelancing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Technology</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a href="">
+                        <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
+                      </a>
+                      <p>Dan Brown</p>
+
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Corporate Sales <i class="fas fa-chevron-down nav-chevron ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase">Books</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Drama</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Educational</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Islamic</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Freelancing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Technology</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a href="">
+                        <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
+                      </a>
+                      <p>Dan Brown</p>
+
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+
+
+              </div>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link text-uppercase" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Others <i class="fas fa-chevron-down nav-chevron ml-1"></i>
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+
+                <div class="container">
+                  <div class="row">
+                    <div class="col-md-4">
+                      <span class="text-uppercase">Books</span>
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Science Fiction</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Drama</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Educational</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <ul class="nav flex-column">
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Islamic</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Freelancing</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Technology</a>
+                        </li>
+                      </ul>
+                    </div>
+                    <!-- /.col-md-4  -->
+                    <div class="col-md-4">
+                      <a href="">
+                        <img src="resources/img/testimonial-client-1.png" alt="" class="img-fluid">
+                      </a>
+                      <p>Dan Brown</p>
+
+                    </div>
+                    <!-- /.col-md-4  -->
+                  </div>
+                </div>
+                <!--  /.container  -->
+
+
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+
+
+      </nav>
+    </div>
+  </header>
+  <!--END HEADER SECTION-->
+
+
+  <!--START BANNER SECTION-->
+  <section id="banner-wrapper">
+    <div class="container">
+      <div class="banner">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <a class="ready-text" href="#">Are you ready to learn?</a>
+            <h1 class="mt-2">Start learning new things Daily</h1>
+            <a href="#" class="rounded-pill btn banner-btn mt-4">Let's Start</a>
+          </div>
+          <div class="col-md-6">
+            <img src="resources/img/header-img.png" alt="" class="img-fluid">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END BANNER SECTION-->
+
+  <!--START ABOUTUS SECTION -->
+  <section id="aboutus">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="card-wrapper">
+            <div class="card-img-wrapper">
+              <img class="img-fluid" src="resources/img/topic-icon.png" alt="">
             </div>
+            <h5>1500+ Topic</h5>
+            <p class="text-muted"><small>Learn Anything</small></p>
+          </div>
         </div>
+        <div class="col-md-3">
+          <div class="card-wrapper">
+            <div class="card-img-wrapper">
+              <img class="img-fluid" src="resources/img/student-icon.png" alt="">
+            </div>
+            <h5>1800+ Students</h5>
+            <p class="text-muted"><small>Learn Anything</small></p>
+          </div>
         </div>
-    </footer>
-    <!--End Footer-->
-    <!-- HTML5 Shiv -->
-    <script type="text/javascript" src="vendors/js/html5shiv.min.js"></script>
+        <div class="col-md-3">
+          <div class="card-wrapper">
+            <div class="card-img-wrapper">
+              <img class="img-fluid" src="resources/img/test-icon.png" alt="">
+            </div>
+            <h5>9k+ Test Token</h5>
+            <p class="text-muted"><small>Learn Anything</small></p>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="card-wrapper">
+            <div class="card-img-wrapper">
+              <img class="img-fluid" src="resources/img/a-plus-icon.png" alt="">
+            </div>
+            <h5>2000 A+</h5>
+            <p class="text-muted"><small>Learn Anything</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!--END ABOUTUS SECTION-->
 
-    <!-- Respond Js -->
-    <script type="text/javascript" src="vendors/js/respond.min.js"></script>
+  <!--START COURSES SECTION-->
+  <section id="courses">
+    <div class="container">
+      <h2 class="text-center">Online Courses</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="resources/img/class-1-bg.png" alt="" class="img-fluid">
+            <div class="course-card-content">
+              <div class="client-img-btn d-flex justify-content-between align-items-center">
+                <img src="resources/img/class-1-instructor.png" alt="">
+                <a href="#" class="free-btn rounded-pill">Free</a>
+              </div>
+              <h5>Modern Psychology</h5>
+              <p class="text-muted">Designation</p>
+              <a href="#" class="buy-btn rounded-pill">
+                Buy Course
+              </a>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
+                  <p class="mb-0"><small>Start, 20 July, 2020</small></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
+                  <p class="mb-0"><small>60 Seats</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="resources/img/class-2-bg.png" alt="" class="img-fluid">
+            <div class="course-card-content">
+              <div class="client-img-btn d-flex justify-content-between align-items-center">
+                <img src="resources/img/class-2-instructor.png" alt="">
+                <a href="#" class="free-btn rounded-pill">Free</a>
+              </div>
+              <h5>HR Management</h5>
+              <p class="text-muted">Designation</p>
+              <a href="#" class="buy-btn rounded-pill">
+                Buy Course
+              </a>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
+                  <p class="mb-0"><small>Start, 20 July, 2020</small></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
+                  <p class="mb-0"><small>60 Seats</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="course-card">
+            <img src="resources/img/class-3-bg.png" alt="" class="img-fluid">
+            <div class="course-card-content">
+              <div class="client-img-btn d-flex justify-content-between align-items-center">
+                <img src="resources/img/class-3-instructor.png" alt="">
+                <a href="#" class="free-btn rounded-pill">Free</a>
+              </div>
+              <h5>Modern Psychology</h5>
+              <p class="text-muted">Designation</p>
+              <a href="#" class="buy-btn rounded-pill">
+                Buy Course
+              </a>
+              <hr>
+              <div class="d-flex justify-content-between">
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/calendar-icon.png" alt="calendar">
+                  <p class="mb-0"><small>Start, 20 July, 2020</small></p>
+                </div>
+                <div class="d-flex align-items-center">
+                  <img class="img-fluid mr-2" src="resources/img/seat-icon.png" alt="seat list">
+                  <p class="mb-0"><small>60 Seats</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn rounded-pill all-course-btn">View All Courses</a>
+    </div>
+  </section>
+  <!--END COURSES SECTION-->
 
-    <!-- Selectivzr -->
-    <script type="text/javascript" src="vendors/js/selectivizr.min.js"></script>
-    <noscript>
-        <link rel="stylesheet" href="[fallback css]" /></noscript>
-        
-    <!--Font Awesome-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js" integrity="sha256-HkXXtFRaflZ7gjmpjGQBENGnq8NIno4SDNq/3DbkMgo=" crossorigin="anonymous"></script>
+  <!--START TESTIMONIAL SECTION-->
+  <section class="testimonialArea">
+    <div class="testimonial-heading text-center">
+      <h2 class="text-muted">Testimonial</h2>
+    </div>
+    <div class="">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner container">
+          <div class="carousel-item active testimonialSlider">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial_author">
+                  <img src="resources/img/testimonial-client-1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="testimonial_content">
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly believable.</p>
+                </div>
+                <div class="d-flex justify-content-around ">
+                  <div class="star">
+                    <ul>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                    </ul>
+                  </div>
+                  <div class="author_name">
+                    <h5>User Name -<span>Student</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-    <!--Bootstrap-->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    
-    <!--Main JS-->
-    <script src="resources/js/main.js"></script>
+          <div class="carousel-item testimonialSlider">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial_author">
+                  <img src="resources/img/testimonial-client-1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="testimonial_content">
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly believable.</p>
+                </div>
+                <div class="d-flex justify-content-around ">
+                  <div class="star">
+                    <ul>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                    </ul>
+                  </div>
+                  <div class="author_name">
+                    <h5>User Name -<span>Student</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-</body></html>
+          <div class="carousel-item  testimonialSlider">
+            <div class="row">
+              <div class="col-md-4 col-sm-12">
+                <div class="testimonial_author">
+                  <img src="resources/img/testimonial-client-1.png" alt="">
+                </div>
+              </div>
+              <div class="col-md-8">
+                <div class="testimonial_content">
+                  <p>There are many variations of passages of Lorem Ipsum available, but the majority
+                    have suffered alteration in some form, by injected humour, or randomised words
+                    which don't look even slightly believable.</p>
+                </div>
+                <div class="d-flex justify-content-around ">
+                  <div class="star">
+                    <ul>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                      <li><img src="resources/img/star.png" alt="star"></li>
+                    </ul>
+                  </div>
+                  <div class="author_name">
+                    <h5>User Name -<span>Student</span></h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+  </section>
+  <!--END TESTIMONIAL SECTION-->
+
+  <!--START FOOTER SECTION-->
+  <footer>
+    <svg class="upper-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#282F95" fill-opacity="0.9"
+        d="M0,128L60,117.3C120,107,240,85,360,80C480,75,600,85,720,112C840,139,960,181,1080,192C1200,203,1320,181,1380,170.7L1440,160L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+    <svg class="bottom-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path fill="#DAD9E3" fill-opacity="1"
+        d="M0,192L60,208C120,224,240,256,360,245.3C480,235,600,181,720,149.3C840,117,960,107,1080,96C1200,85,1320,75,1380,69.3L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
+      </path>
+    </svg>
+    <div class="footer_content">
+    <div class="container">
+      <div class="subscribe_section">
+        <div class="row align-items-center ">
+          <div class="col-md-5 col-sm-12">
+            <div class="subscribe_heading">
+              <h3>Subscribe Our Newsletter</h3>
+              <p>Don't mess updates our new Course and all the astonishing offers</p>
+            </div>
+          </div>
+          <div class="col-md-7 col-sm-12">
+            <form class="">
+              <div class="form-group subscribe_form">
+                <input type="email" class="form-control" id="email" placeholder="Email Address">
+
+                <button type="submit" class="btn-main subscribe-btn ml-2">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="footer_bottom_section">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="footerItem">
+              <p>Millions of people of all ages and from
+                around the world are improving their
+                lives with us </p>
+
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="singleFooter">
+                  <h4>Course</h4>
+                  <ul>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Engineering</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="singleFooter">
+                  <h4>Terms</h4>
+                  <ul>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Engineering</a></li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="singleFooter">
+                  <h4>Useful Link</h4>
+                  <ul>
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Business</a></li>
+                    <li><a href="#">Marketing</a></li>
+                    <li><a href="#">Engineering</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer_copyright">
+        <p class="copyright">
+          Copyright &copy; 2020 Rokomari.com
+        </p>
+      </div>
+    </div>
+  </div>
+    </div>
+  </footer>
+  <!--END FOOTER SECTION-->
+
+
+  <!-- HTML5 Shiv -->
+  <script type="text/javascript" src="vendors/js/html5shiv.min.js"></script>
+
+  <!-- Respond Js -->
+  <script type="text/javascript" src="vendors/js/respond.min.js"></script>
+
+  <!-- Selectivzr -->
+  <script type="text/javascript" src="vendors/js/selectivizr.min.js"></script>
+  <noscript>
+    <link rel="stylesheet" href="[fallback css]" /></noscript>
+
+  <!--Font Awesome-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js"
+    integrity="sha256-HkXXtFRaflZ7gjmpjGQBENGnq8NIno4SDNq/3DbkMgo=" crossorigin="anonymous"></script>
+
+  <!--Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+
+  <!--Main JS-->
+  <script src="resources/js/main.js"></script>
+
+</body>
+
+</html>

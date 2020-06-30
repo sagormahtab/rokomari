@@ -235,32 +235,22 @@ navbar.bg-custom{
 /* Footer */
 /*============================*/
 footer{
-    position: relative;
 }
 .upper-svg{
     position: absolute;
     left: 0;
 }
-.newsletter{
-    border-radius: 10px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    background: tomato;
-    width: 70%;
-}
-
 .footer_content{
     background: linear-gradient(rgba(40, 47, 149, 0.9), rgba(40, 47, 149, 0.9)), linear-gradient(rgb(218, 217, 227), rgb(218, 217, 227));
-}
-.footerArea{
-    background: rgba(40, 47, 149, 0.9), rgb(218, 217, 227);
+    padding-bottom: 6%;
 }
 .subscribe_section {
     background: #fff;
     box-sizing: border-box;
     padding: 30px;
     border-radius: 10px;
+    position: relative;
+    margin-top: -15%;
 }
 .subscribe-btn {
     border: none;
@@ -283,7 +273,7 @@ footer{
 
 .subscribe_heading h3 {
     font-size: 30px;
-    color: #0051ff;
+    color: #0c00d1;
     font-weight: 700;
 }
 
@@ -294,27 +284,22 @@ footer{
 }
 .footer_bottom_section {
     color: #fff;
-}
-.footer_copyright {
-    padding: 20px 0;
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    color: #ffe3e3cc;
+    margin-top: 10%;
 }
 .subscribe_form {
     display: flex;
     justify-content: space-between;
 }
+.copyright{
+    font-size: 14px;
+}
 .footerItem {
-    display: flex;
-    align-items: flex-end;
-    height: 100%;
     color:#cccccc;
 }
 .singleFooter h4 {
     font-size: 20px;
     font-weight: 700;
+    padding-bottom: 15%;
 }
 
 .singleFooter ul {
@@ -324,12 +309,10 @@ footer{
 
 .singleFooter ul li {
     list-style: none;
+    margin-bottom: 4%;
 }
 
 .singleFooter ul li a {
     color: #cccccc;
+    font-size: 14px;
 }
-footer.footerArea {
-    padding-bottom: 20px;
-}
-

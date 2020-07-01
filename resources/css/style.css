@@ -60,6 +60,9 @@ a:hover{
     box-sizing: content-box;
     height: 30px;
 }
+.search-input::placeholder{
+    font-style: italic;
+}
 .upper-header .search-btn{
     border: none;
     background: #0397d3;

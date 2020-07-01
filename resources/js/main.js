@@ -17,6 +17,15 @@ $(window).resize(function(){
   
 	}	
 });  
-  
-// document ready  
+
+$(window).scroll(function() {
+  var scroll = $(window).scrollTop();
+  var $rokomari = $("#upper-header-wrapper");
+    if (scroll >= $rokomari.height()) {
+        $("#upper-header-wrapper").addClass("shadow");
+    } else {
+        $("#upper-header-wrapper").removeClass("shadow");
+    }
+});
+
 });

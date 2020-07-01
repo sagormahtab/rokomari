@@ -23,11 +23,23 @@ a:hover{
 /*============================*/
 /* UPPER HEADER */
 /*============================*/
+header{
+}
 #upper-header-wrapper{
     border-bottom: 1px solid lightgray;
+    background: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+}
+.header-input{
+    width: 50%;
 }
 .upper-header .brand-logo{
     width: 100px;
+}
+.shadow{
+    box-shadow: 0 4px 6px -3px #9c9c9c;
 }
 .upper-header .category-btn{
     border-right: none;
@@ -62,7 +74,10 @@ a:hover{
 /*============================*/
 /* NAVBAR */
 /*============================*/
-navbar.bg-custom{
+#main-nav{
+    padding-top: 78px;
+}
+.navbar.bg-custom{
     background: white;
 }
 .nav-chevron{

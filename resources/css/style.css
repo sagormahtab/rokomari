@@ -23,8 +23,6 @@ a:hover{
 /*============================*/
 /* UPPER HEADER */
 /*============================*/
-header{
-}
 #upper-header-wrapper{
     border-bottom: 1px solid lightgray;
     background: white;
@@ -47,6 +45,9 @@ header{
     background: url(../img/select-border.png) no-repeat right center;
     background-size: auto 70%;
     border-bottom: 2px solid #f90;
+}
+.upper-header .category-btn:hover{
+    color: gray;
 }
 .upper-header .search-chevron{
     color: darkgrey;

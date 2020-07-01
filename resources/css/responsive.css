@@ -1,3 +1,72 @@
+@media (max-width: 575.98px) { 
+
+}
+
+@media (max-width: 767.98px) {
+  #upper-header-wrapper{
+    position: static;
+  }
+  .upper-header{
+    flex-direction: column;
+  }
+  .brand-logo{
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 15px;
+  }
+  .header-input{
+    width: 100%;
+  }
+  .upper-header-right{
+    margin: auto;
+    padding-bottom: 2%;
+  }
+  #main-nav {
+    padding-top: 4px;
+  }
+  .banner-btn{
+    margin-bottom: 35px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .banner-img{
+    width: 70%;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-img-wrapper img {
+    width: 45%;
+  }
+  .card-wrapper {
+    margin-bottom: 30px;
+  }
+  .course-card {
+    margin-bottom: 30px;
+  }
+  #aboutus::after {
+    top: 83%;
+  }
+  #courses::after {
+    top: 92%;
+  }
+  .footer_bottom_section{
+    text-align: center;
+  }
+  .singleFooter h4 {
+    padding-bottom: 5%;
+  }
+}
+
+@media screen and (max-width: 991.98px) { 
+  h1{
+    font-size: 40px !important;
+  }
+}
+
+@media (max-width: 1199.98px) { 
+
+}
+
 @media screen and (min-width: 992px) {
   
   /* remove the padding from the navbar so the dropdown hover state is not broken */

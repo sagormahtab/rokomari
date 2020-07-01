@@ -114,6 +114,7 @@ navbar.bg-custom{
 #aboutus{
     padding: 100px 0;
     position: relative;
+    z-index: 15;
 }
 #aboutus::after{
     content: "";
@@ -158,16 +159,14 @@ navbar.bg-custom{
 #courses{
     background: linear-gradient(#F2F9FF, #F2F9FF);
     padding: 80px 0;
-    z-index: -5;
     position: relative;
 }
 #courses::after{
     content: "";
     background: url(../img/dot-bg.png) no-repeat left bottom;
-    width: 100%;
+    width: 30%;
     position: absolute;
     top: 85%;
-    display: block;
     height: 250px;
 }
 #courses h2{
